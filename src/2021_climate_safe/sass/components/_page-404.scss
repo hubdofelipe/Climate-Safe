@@ -1,0 +1,64 @@
+.page-404{
+	background-image: url(../images/bg-404.png);
+	background-position: 50% 0;
+    background-repeat: repeat;
+    padding-top: 90px;
+
+    form{
+    	display: flex;
+    }
+    
+
+    .container{
+    	max-width: 750px;
+    }
+
+    h2{
+    	font-weight: 300;
+    	font-size: 40px;
+    	text-align: center;
+    	@include media(get-bp(desktop)){
+    		font-size: 87px;
+    	}
+    }
+    p{
+    	font-size: 18px;
+    	text-align: center;
+    	margin-bottom: 60px;
+    	a{
+    		color: get-color(primary);
+      }
+    	a:hover{
+    		text-decoration: underline;
+    	}
+    }
+ }
+
+ .form__404{
+ 	background: get-color(grey-light);
+ 	padding-top: 60px;
+ 	padding-bottom: 60px;
+ 	border-top: 1px solid rgba(get-color(secondary), 0.1);
+ }
+
+ .form__404__submit{
+       background: get-color(primary) ;
+       padding: 15px;
+       border: none;
+       color: get-color(light);
+       font-weight: 600;
+       text-transform: uppercase;
+       transition: 300ms;
+       outline: none;
+
+       &:hover{
+       	background: get-color(secondary);
+       }
+ }
+
+.form__404__text{
+	padding: 15px;
+	border: 1px solid  rgba(get-color(secondary), 0.2);
+	width: 80%;
+	margin-right: 10px;
+}
