@@ -1,0 +1,25 @@
+.numbers{
+    .container{
+        @include media(get-bp(desktop)){
+            display: flex;
+        }
+    }
+    .numbers__item{
+        max-width: 500px;
+        margin:50px auto;
+        h2{
+            font-size: 30px;
+            font-weight: 500;
+            color:get-color(primary);
+            text-align: center;
+            b{
+                font-size: 40px;
+            }
+        }
+
+        p{
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}

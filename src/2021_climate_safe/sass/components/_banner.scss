@@ -1,0 +1,24 @@
+.banner{
+    .swiper-slide{
+        background-repeat: no-repeat;
+        background-size:cover ;
+    }
+    .banner__slide{
+        min-height: 100vh;
+        background-color: rgba(#000, 0.5);
+        padding: 40px 0px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    h2{
+        font-size: 40px;
+        color:get-color(light);
+        font-weight: 700;
+    }
+    p{
+        font-size: 20px;
+        color:get-color(light);
+    }
+}

@@ -3,10 +3,10 @@
         <div class="container">
             <div class="footer-container__logo-column">
                 <div class="footer-logo">
-                    <img src="./assets/images/index-logo.png" alt="">
+                    <img src="./assets/images/logo.png" alt="">
                 </div>
                 <div class="footer-container__copyright">
-                    Index © 2020. Todos os direitos reservados.
+                A WayCarbon é referência em assessoria sobre mudanças globais do clima, gestão de ativos ambientais e no desenvolvimento de estratégias e negócios visando a ecoeficiência e a economia de baixo carbono. Conheça nossos produtos e serviços.
                     <a href="">Termos de uso</a> e <a href="">política de privacidade</a>.
                 </div>
             </div>

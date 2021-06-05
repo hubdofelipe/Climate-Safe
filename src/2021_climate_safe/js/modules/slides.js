@@ -1,6 +1,6 @@
-import { Swiper, Navigation, Pagination } from "swiper/dist/js/swiper.esm.js";
+import { Swiper, Navigation, Pagination, Autoplay } from "swiper/dist/js/swiper.esm.js";
 
-Swiper.use([Navigation, Pagination]);
+Swiper.use([Navigation, Pagination, Autoplay]);
 
 export default () => {
     var swiper = new Swiper('.gallery-modal-slider', {
@@ -8,5 +8,11 @@ export default () => {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
+    });
+
+    var banner = new Swiper(".banner", {
+      autoplay: {
+        delay:5000,
+      }
     });
 };

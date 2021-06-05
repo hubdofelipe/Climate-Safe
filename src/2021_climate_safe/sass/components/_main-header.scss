@@ -8,14 +8,15 @@
 }
 
 .main-header {
-    background-color: rgba(#000, .2);
+    background-color: get-color(light);
     color: get-color(dark);
-    box-shadow: 0 0.2rem 0.7rem rgba(#000, 0.1);
     h1 {
         margin: 0;
     }
     &.change-color{
-        background-color: get-color(secondary);   
+        .main-header__logo-container{
+            max-width: 70px;
+        }
     }
 }
 
@@ -58,10 +59,11 @@
     }
 
     .main-header__logo-container {
-        width: 110px;
+        max-width: 110px;
         padding-top: 20px;
         padding-bottom: 20px;
         margin-right: 40px;
+        transition: 1s;
         
         a{
             display: flex;
@@ -82,7 +84,7 @@
     .social-listing{
         margin-left: 20px;
         .social-listing__item{
-            color: get-color(light);
+            color: get-color(primary);
         }
     }
 
@@ -159,6 +161,12 @@
                 height: 100%;
                 display: flex;
                 align-items: center;
+                color: rgba(get-color(grey), 0.7);
+                transition: 0.5s;
+
+                &:hover{
+                    color: get-color(primary);
+                }
             }
         }
 
