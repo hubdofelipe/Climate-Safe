@@ -1,13 +1,47 @@
 .footer-container{
+    .container--menu{
+        @include media (get-bp(desktop)){
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+    ul{
+        list-style-type: none;
+        font-size: 14px;
+        padding: 0;
+        display: grid;
+        grid-gap: 8px;
+        font-weight: 700;
+        margin-bottom: 50px;
+        text-align: center;
+        @include media (get-bp(desktop)){
+            text-align:left;
+        }
+
+        a{
+            opacity: 0.7;
+            transition: 300ms;
+            &:hover{
+                opacity: 1;
+                text-decoration: underline;
+            }
+        }
+    }
+    h2{
+        font-size: 15px;
+        text-align: left;
+        margin-bottom: 25px;
+        opacity: 0.7;
+        text-transform: uppercase;
+        text-align: center;
+        @include media (get-bp(desktop)){
+            text-align:left;
+        }
+    }
     background-color: get-color(secondary);
     padding-top: 40px;
     padding-bottom: 40px;
     color: get-color(light);
-    .container{
-        @include media (get-bp(desktop)){
-            display: flex;
-        }
-    }
 }
 
 .footer-container__logo-column{
@@ -22,16 +56,28 @@
 .footer-logo{
     filter: brightness(0) invert(1);
     margin-bottom: 20px;
+
     img{
         width: 120px;
+        margin: 0 auto;
+        display: block;
+        @include media (get-bp(desktop)){
+            margin: 0;
+        }
+
     }
 }
 
 .footer-container__copyright{
     font-size: 14px;
+    text-align: center;
+    @include media (get-bp(desktop)){
+        text-align: left;
+    }
     a{
         color: get-color(primary);
         text-decoration: underline;
+        
     }
 }
 
@@ -54,6 +100,7 @@
         }
         &:hover{
             text-decoration: underline;
+
         }
     }
 }
@@ -81,6 +128,41 @@
         }
         img{
             transition: 400ms;
+        }
+    }
+}
+.footer__social{
+    border-top: 1px solid rgba(get-color(light), 0.3);
+    margin-top: 40px;
+    padding-top: 30px;
+    p{
+        color: rgba(get-color(light), 0.8);
+        font-size: 13px;
+        text-align: center;
+        margin-bottom: 30px;
+
+        @include media(get-bp(desktop)) {
+            text-align: left;
+            margin-bottom: 0;
+        }
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include media(get-bp(desktop)) {
+            display: grid;
+            grid-template-columns: 1fr 60px;
+            align-items: center;
+        }
+    }
+    ul{
+        display: flex;
+        margin: 0;
+        i{
+            color: get-color(light)
+
         }
     }
 }

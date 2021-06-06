@@ -59,18 +59,11 @@
                 <h1 class="main-header__logo-container">
                     <span class="hide-text">Climate Safe</span>
                     <a href="/">
-                        <img class="main-header__logo" src="./assets/images/index-logo.png" alt="">
+                        <img class="main-header__logo" src="./assets/images/logo.png" alt="">
                     </a>
                 </h1>
                 <div class="header-content">
                     <?php include 'template-parts/menu/menu-content.php' ?>
-                    <div class="burger-icon-container desktop-side-menu-call is-animated">
-                        <div class="burger-icon primary"></div>
-                    </div>
-                    <div class="burger-icon-container desktop-full-menu-call is-animated">
-                        <div class="burger-icon primary"></div>
-                    </div>
-                    <?php include 'template-parts/search.php' ?>
                     <?php include 'template-parts/share.php' ?>
                 </div>
             </div>
@@ -79,7 +72,7 @@
             <h1 class="mobile-logo">
                 <span class="hide-text">Climate Safe</span>
                 <a href="/">
-                    <img class="mobile-logo-img" src="./assets/images/index-logo.png" alt="">
+                    <img class="mobile-logo-img" src="./assets/images/logo.png" alt="">
                 </a>
             </h1>
             <div class="main-header__mobile-controls">

@@ -57,10 +57,59 @@
             <p>A WayCarbon possui serviços e produtos integrados que promovem a gestão da sustentabilidade em iniciativas públicas e privadas. Conheça!</p>
         </div>
     </section>
-    <section  class="sign up" >
+
+    <section  class="sign-up" >
+        <div class="container">
             <h2>Quer ficar por dentro de nóticias e conteúdos da nossa newsletter?</h2>
+            <form action="">
+                <input class="sign-up__email" type="email" placeholder="INSIRA SEU E-MAIL">
+                <input class="sing-up__submit" type="submit" value="INSCREVA-SE">
+            </form>
+        </div>
     </section>
-    
+
+    <section class="customers">
+        <div class="container">
+            <div class="customers__title">
+                <h2>ALGUNS DE NOSSOS CLIENTES</h2>
+                <div class="customers__buttons">
+                    <div class="customers__button customers__button__prev"><</div>
+                    <div class="customers__button customers__button__next">></div>
+                </div>
+            </div>
+            <div class="swiper-container customers__slider"> 
+                <div class="swiper-wrapper">
+                <?php for($i=0; $i<20; $i++): ?>
+                    <div class="swiper-slide"><img src="assets/images/clientes.png" alt=""> </div>
+                <?php endfor; ?>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="container">
+            <div class="blog__title">
+                <h2>BLOG</h2>
+                <div class="blog__buttons">
+                    <div class="blog__button blog__button__prev"><</div>
+                    <div class="blog__button blog__button__next">></div>
+                </div>
+            </div>
+            <div class="swiper-container blog__slider"> 
+                <div class="swiper-wrapper">
+                <?php for($i=0; $i<20; $i++): ?>
+                    <div class="swiper-slide">
+                        <div class="blog__slide">
+                            <img src="assets/images/post1.jpg" alt=""> 
+                            <h3>Dia Mundial do Meio Ambiente 2021: a necessidade e a urgência da restauração dos ecossistemas</h3>
+                        </div>
+                    </div>
+                <?php endfor; ?>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
 <?php include 'footer.php' ?>

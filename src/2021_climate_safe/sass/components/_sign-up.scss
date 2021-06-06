@@ -1,0 +1,61 @@
+.sign-up{
+    background-color: get-color(primary);
+    margin-top: 50px;
+    padding: 50px 0;
+    .container{
+        @include media(get-bp(desktop)){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .sign-up__email{
+        color: get-color(primary);
+        outline: none;
+        border: none;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        @include media(get-bp(desktop)){
+            margin: 0 0 0 30px;
+            width: 300px;
+        }
+        
+
+
+    }
+    .sign-up__email::placeholder{
+        color: get-color(primary);
+        font-weight:700;
+    }
+    .sing-up__submit{
+        background-color: get-color(tertiary);
+        outline: none;
+        border: none;
+        padding: 10px 20px;
+        color: get-color(light);
+        font-weight: 700;
+    }
+    form{
+        display:flex;
+        flex-direction: column;
+        @include media(get-bp(desktop)){
+            flex-direction: row;
+            align-items:center;
+
+        }
+    }
+    h2{
+        font-size: 20px;
+        color: get-color(light);
+        font-weight: 100;
+        text-align: center;
+
+        @include media(get-bp(desktop)){
+            text-align: right;
+            margin-bottom: 0;
+            max-width: 400px;
+        }
+    }
+}
