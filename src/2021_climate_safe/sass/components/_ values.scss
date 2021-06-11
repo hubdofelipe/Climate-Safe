@@ -1,0 +1,24 @@
+.values{
+   background: get-color(tertiary);
+   padding-bottom: 50px;
+   padding-top: 50px;
+   text-align: center;
+   color: get-color(light);
+
+   h2{
+    font-size: 25px;
+    color: get-color(light);
+    font-weight: 900;
+    justify-items: center;
+    }
+   h3{
+       font-size: 15px;
+       font-weight: 400;
+       padding-top: 10px;
+   }
+   h4{
+       display: inline-flex;
+       margin-left: 300px;
+       
+   }
+}
