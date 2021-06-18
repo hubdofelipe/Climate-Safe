@@ -1,24 +1,25 @@
 .values{
-   background: get-color(tertiary);
-   padding-bottom: 50px;
-   padding-top: 50px;
-   text-align: center;
-   color: get-color(light);
+    background: get-color(tertiary);
+    padding-top: 100px;
+    padding-bottom: 100px;
+   
 
-   h2{
-    font-size: 25px;
-    color: get-color(light);
-    font-weight: 900;
-    justify-items: center;
+    .container{
+        display: flex;
+        color: get-color(light);
+
     }
-   h3{
-       font-size: 15px;
-       font-weight: 400;
-       padding-top: 10px;
-   }
-   h4{
-       display: inline-flex;
-       margin-left: 300px;
-       
-   }
+  
+}
+.values__text{
+    h2{
+        text-align: center;
+        color: get-color(light)
+
+    }
+    p{
+        text-align: center;
+        margin-bottom: 40px;
+        color: get-color(light);
+    }
 }

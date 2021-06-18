@@ -1,0 +1,18 @@
+.seals{
+    background: get-color(primary);
+    .container{
+        height: 300px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+    
+    }
+    h2{
+        color: get-color(light);
+        font-size: 25px;
+        padding-top: 45px;
+        margin-left: 120px;
+    }
+}
