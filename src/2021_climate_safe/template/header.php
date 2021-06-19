@@ -59,7 +59,7 @@
                 <h1 class="main-header__logo-container">
                     <span class="hide-text">Climate Safe</span>
                     <a href="/">
-                        <img class="main-header__logo" src="./assets/images/logo.png" alt="">
+                        <img class="main-header__logo" src="./assets/images/logo-main.png" alt="">
                     </a>
                 </h1>
                 <div class="header-content">
@@ -72,7 +72,7 @@
             <h1 class="mobile-logo">
                 <span class="hide-text">Climate Safe</span>
                 <a href="/">
-                    <img class="mobile-logo-img" src="./assets/images/logo.png" alt="">
+                    <img class="mobile-logo-img" src="./assets/images/logo-main.png" alt="">
                 </a>
             </h1>
             <div class="main-header__mobile-controls">

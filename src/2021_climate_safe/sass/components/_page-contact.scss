@@ -1,0 +1,145 @@
+.contact {
+    background: rgba(get-color(dark), 0.03);
+    padding: 50px 0;
+
+    @include media(get-bp(desktop)) {
+        padding: 100px 0;
+    }
+
+    .container {
+        @include media(get-bp(desktop)) {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            grid-column-gap: 50px;
+        }
+    }
+}
+
+.contact__infos {
+    text-align: center;
+
+    @include media(get-bp(desktop)) {
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+        
+    }
+
+    h4 {
+        font-size: 1.4rem;
+        color: rgba(get-color(dark), 0.7);
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: rgba(get-color(dark), 0.7);
+        margin-bottom: 20px;
+    }
+
+    .social-listing {
+        @include media(get-bp(desktop)) {
+            justify-content: flex-start;
+        }
+    }
+
+    iframe {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+.contact__form {
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 20px;
+
+        @include media(get-bp(desktop)) {
+            text-align: left;
+        }
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 50px;
+
+        @include media(get-bp(desktop)) {
+            text-align: left;
+        }
+    }
+}
+
+.contact__line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact__item {
+    width: 100%;
+    margin-bottom: 30px;
+
+    @include media(get-bp(desktop)) {
+        width: 48%;
+
+        &.contact__item--full {
+            width: 100%;
+        }
+    }
+
+    input, textarea, select {
+        width: 100%;
+        width: 100%;
+        padding: 6px;
+        border: 2px solid #e0e0e0;
+        outline: none;
+        border-radius: 4px;
+
+        &:focus {
+            border: 2px solid get-color(primary);
+        }
+    }
+
+    label {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: block;
+
+        span {
+            color: red;
+            font-size: 1rem;
+            vertical-align: super;
+        }
+    }
+}
+
+.contact__submit {
+    display: block;
+    width: max-content;
+    max-width: 80%;
+    margin: 0 auto;
+    background: get-color(primary);
+    border: none;
+    border-radius: 4px;
+    color: get-color(light);
+    padding: 15px 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    transition: 300ms;
+    margin-bottom: 50px;
+
+    @include media(get-bp(desktop)) {
+        margin: 0;
+    }
+
+    &:hover {
+        background: get-color(tertiary);
+    }
+}
